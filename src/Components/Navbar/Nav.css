@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: transparent; */
+}
+
+.social{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    /* background-color: transparent; */
+}
+
+.social i{
+    cursor: pointer;
+}
+
+.hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+.hamburger i{
+    font-size: 20px;
+    cursor: pointer;
+}
