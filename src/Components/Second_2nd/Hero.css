@@ -1,0 +1,199 @@
+.main_ {
+    height: 100vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping for small screens */
+    padding: 20px;
+}
+
+.left {
+    height: 90vh;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left i {
+    font-size: 300px;
+    color: rgb(153, 153, 153);
+}
+
+.right {
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: rgb(253, 41, 92);
+    line-height: 26px;
+}
+
+.right h2 {
+    width: 50%;
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 500;
+    color: rgb(47, 47, 47);
+    margin-top: 20px;
+}
+
+.right hr {
+    width: 150px;
+    margin-top: 20px;
+    color: rgb(253, 41, 92) !important;
+}
+
+.right h3 {
+    margin-top: 20px;
+    width: 90%;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.location {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.location_1,
+.location_2 {
+    height: 100px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.location i {
+    font-size: 30px;
+    margin-right: 10px;
+    color: rgb(253, 41, 92);
+}
+
+.under {
+    width: 80%;
+    text-align: center;
+}
+
+.under h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.under p {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgb(43, 43, 43);
+}
+
+.btn {
+    height: 40px;
+    width: 150px;
+    border: 2px solid rgb(253, 41, 92);
+    border-radius: 30px;
+    color: rgb(253, 41, 92);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .main_ {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 80%;
+        height: auto;
+        text-align: center;
+    }
+
+    .left i {
+        font-size: 200px;
+    }
+
+    .right h2 {
+        width: 100%;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .right h3 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .location {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location_1,
+    .location_2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left i {
+        font-size: 150px;
+    }
+
+    .right h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .right h3 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left i {
+        font-size: 100px;
+    }
+
+    .right h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .right h3 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .btn {
+        width: 120px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
