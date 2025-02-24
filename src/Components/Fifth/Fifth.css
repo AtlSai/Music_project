@@ -1,0 +1,47 @@
+.main_fifth{
+    height: 110vh;
+    width: 100%;
+    background-color: white;
+     display: flex;
+    /* align-items: center;  */
+    justify-content: center; 
+} 
+
+.upper_fifth{
+    background-color: aquamarine;
+    height: 200px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+    /* margin-top: auto; */
+}
+
+.upper_text{
+
+}
+
+.upper_fifth h3{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: 
+    rgb(253, 41, 92);
+}
+
+.upper_fifth h1{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    line-height: 56px;
+    font-weight: 500;
+}
+
+.upper_fifth hr{
+    width: 200px;
+    color: antiquewhite;
+    margin: auto;
+}

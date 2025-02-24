@@ -1,19 +1,106 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    /* background-color: black; */
+    box-sizing: border-box;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
-.center{
-    font-family: sans-serif - 500;
-    font-size: 30px;
+.center {
+    font-family: sans-serif;
+    font-size: 2rem;
     color: white;
-    z-index: 1;
+    /* background-color: aqua; */
+    /* z-index: 1; */
     font-weight: 700;
-    /* margin-top: -200px; */
+    text-align: center;
+    width: 100%; /* Allow content to scale */
+    max-width: 800px;
+    height: auto;
+}
+
+/* Adjust background image */
+.center {
+    /* background-color: aliceblue; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+}
+
+.center:hover{
+    animation: moveAround 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes moveAround {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(1.5px, -1.5px); }
+    50% { transform: translate(-1.5px, 1.5px); }
+    75% { transform: translate(1.5px, 1.5px); }
+    100% { transform: translate(-1.5px, -1.5px); }
+  }
+
+.center h1{
+    background-color: antiquewhite;
+    /* padding-right: 20px; */
+    
+    position: absolute;
+    margin: auto;
+    /* z-index: -1; */
+    mix-blend-mode: difference;
+    width: 100%;
+    text-align: center;
+    font-family: 'Bungee Shade', cursive; /* Change 'Bungee Shade' to any font you choose */
+    font-size: 5rem; /* Large font */
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffff, #0040ff, #7a00ff, #ff00e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* margin-right: -20px; */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .center {
+        font-size: 1.8rem;
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        height: auto;
+        padding: 20px;
+    }
+    .center {
+        font-size: 1.5rem;
+        width: 70%;
+    }
+    .center h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .center {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+    .center h1{
+        font-size: 3rem;
+    }
 }

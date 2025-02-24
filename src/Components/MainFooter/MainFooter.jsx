@@ -3,6 +3,7 @@ import "./MainFooter.css";
 
 const MainFooter = () => {
   return (
+    <div>
     <div className="foot">
       <div className="box1">
         <div className="day">
@@ -25,6 +26,10 @@ const MainFooter = () => {
         <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ad debitis totam dignissimos facere explicabo facilis eius similique eveniet enim!
         </h3>
       </div>
+    </div>
+    <div className="butn">
+    <button><i className="fa-solid fa-angle-down"></i></button>
+    </div>
     </div>
   );
 };

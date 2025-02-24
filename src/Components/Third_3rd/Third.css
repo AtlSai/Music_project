@@ -1,33 +1,26 @@
-.top{
-    height: 150px;
+/* Default styles */
+.top {
+    height: auto;
     width: 100%;
-    /* background-color: cornflowerblue; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
-.text{
+.text {
+    margin-top: 50px;
     width: 300px;
     height: 150px;
-    /* background-color: beige; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     margin: auto;
     font-family: Montserrat, sans-serif;
 }
 
-.text h3{
+.text h3 {
     font-size: 16px;
     line-height: 26px;
-    color: 
-    rgb(253, 41, 92);
+    color: rgb(253, 41, 92);
     font-weight: 500;
     text-align: center;
 }
 
-.text h1{
+.text h1 {
     font-size: 36px;
     line-height: 43px;
     font-weight: 500;
@@ -35,90 +28,81 @@
     margin-top: 10px;
 }
 
-.text hr{
+.text hr {
     width: 100px;
-    color: 
-    rgb(253, 41, 92);
+    color: rgb(253, 41, 92);
     margin: auto;
     margin-top: 20px;
 }
 
-.cards{
-    height: 400px;
+.cards {
+    height: auto;
     width: 100%;
-    /* background-color: burlywood; */
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.cards h1{
+.cards h1, .cards h2 {
     font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.bottom_text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bottom_text h1{
+    text-align: center;
+    font-size: Montserrat, sans-serif;
     font-size: 24px;
     line-height: 29px;
-    font-weight: 500;
+    Color:
+rgb(47, 47, 47);
+font-weight: 100;
+}
+
+.bottom_text h2{
     text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: Montserrat, sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+    Color: rgb(47, 47, 47);
+    font-weight: 100;
+    margin-top: 17px;
 }
 
-.cards h2{
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 500;
-    text-align: center;
-}
-
-.bottom_text{
-  margin-top: 30px;
-}
-
-.card1{
+.card1, .card2, .card3 {
     height: 336px;
-    width: 369px;
-    /* background-color: cadetblue; */
+    width: 100%;
+    max-width: 369px;
     border-radius: 50px;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-.card1:hover{
+.card1:hover, .card3:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
 }
 
 .card2{
-    height: 336px;
-    width: 369px;
-    /* background-color: cadetblue; */
-    border-radius: 50px;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.card2 i{
+.card2 .icon{
     box-shadow: rgba(253, 41, 92, 0.35) 0px 5px 15px;
-    background: none;
 }
 
-.card2:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.card3{
-    height: 336px;
-    width: 369px;
-    /* background-color: cadetblue; */
-    border-radius: 50px;
-}
-
-.card3:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.icon{
+.icon {
     border-radius: 50%;
     height: 110px;
     width: 110px;
-    /* background-color: rgb(251, 253, 253); */
     margin: auto;
     display: flex;
     align-items: center;
@@ -126,13 +110,62 @@
     margin-top: 30px;
 }
 
-.icon:hover{
-        box-shadow: rgba(253, 41, 92, 0.35) 0px 5px 15px;
+.icon:hover {
+    box-shadow: rgba(253, 41, 92, 0.35) 0px 5px 15px;
 }
 
-.icon i{
+.icon i {
     font-size: 60px;
     color: rgb(253, 41, 92);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .text {
+        width: 80%;
+        margin-top: 80px;
+    }
+
+    .text h1 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .cards {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        width: 90%;
+    }
+
+    .text h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card1, .card2, .card3 {
+        width: 90%;
+    }
 }
 
 
