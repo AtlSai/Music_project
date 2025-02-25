@@ -1,0 +1,157 @@
+/* General Styles */
+.pricing-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .pricing-title {
+    font-family: Montserrat, sans-serif;
+    line-height: 26px;
+    color: #e91e63;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .pricing-heading {
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    /* font-weight: bold; */
+    margin-bottom: 70px;
+  }
+  
+  /* Pricing Grid */
+  .pricing-grid {
+    font-family: Montserrat, sans-serif;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  @media (min-width: 768px) {
+    .pricing-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Pricing Card */
+  .pricing-card {
+    height: 500px;
+    width: 330px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing-card hr{
+    width: 90%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    text-align: left;
+    color: #e91e63;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .per-month {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+  }
+  
+  .features li {
+    font-size: 14px;
+    color: #333;
+    padding: 5px 0;
+  }
+  
+  /* Buy Button */
+  .buy-btn{
+    width: 200px;
+    background: none;
+    border: 2px solid #e91e63;
+    color: #e91e63;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .buy-btn:hover {
+    background: #e91e63;
+    color: white;
+  }
+  
+  /* Featured Plan (Middle One) */
+  .featured {
+    background: #e91e63;
+    color: white;
+    position: relative;
+    padding: 40px 20px;
+  }
+  
+  .featured .card-title {
+    color: white;
+  }
+  
+  .featured .description {
+    color: #fff;
+  }
+  
+  .featured .features li {
+    color: white;
+  }
+  
+  .featured-btn {
+    background: white;
+    color: #e91e63;
+    border: 2px solid white;
+  }
+  
+  .featured-btn:hover {
+    background: white;
+    color: #e91e63;
+  }
+  
+  /* Responsive */
+  @media (max-width: 767px) {
+    .pricing-card {
+      padding: 30px;
+    }
+  }
+  

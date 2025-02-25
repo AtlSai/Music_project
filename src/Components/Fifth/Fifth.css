@@ -1,25 +1,16 @@
 .main_fifth{
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background-color: white;
-     display: flex;
-    /* align-items: center;  */
     justify-content: center; 
 } 
 
 .upper_fifth{
-    background-color: aquamarine;
-    height: 200px;
-    width: 50%;
+    height: 150px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: auto; */
-    /* margin-top: auto; */
-}
-
-.upper_text{
-
 }
 
 .upper_fifth h3{
@@ -44,4 +35,110 @@
     width: 200px;
     color: antiquewhite;
     margin: auto;
+}
+
+.profiles{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile1{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile1:hover{
+    border: 15px solid gray;
+    opacity: 1;
+}
+
+.profile2{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile2:hover{
+    border: 15px solid gray;
+    opacity: 10;
+}
+
+.profile3{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile3:hover{
+    border: 15px solid gray;
+    opacity: 1;
+}
+
+.info{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.name1{
+    height: 50px;
+    width: 270px;
+    text-align: center;
+}
+
+.name1 h1{
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.name1 p{
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.name2{
+    height: 50px;
+    width: 270px;
+    text-align: center;
+}
+
+.name2 h1{
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.name2 p{
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.name3{
+    height: 50px;
+    width: 270px;
+    text-align: center;
+}
+
+.name3 h1{
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.name3 p{
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
 }

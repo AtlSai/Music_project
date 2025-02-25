@@ -1,0 +1,108 @@
+.sixth_main{
+    height: 60vh;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.upper_sixth{
+    /* background-color: bisque; */
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper_sixth h3{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: 
+    rgb(253, 41, 92);
+}
+
+.upper_sixth h1{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    line-height: 56px;
+    font-weight: 500;
+}
+
+.buttonss{
+    margin-top: 50px !important;
+    width: 600px;
+    height: 50px;
+    /* background-color: blueviolet; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn1{
+    width: 68px;
+    height: 36px;
+    border-radius: 20px;
+    border: 1px  solid rgb(113, 109, 109)
+}
+
+.btn1:hover{
+    background-color: none;
+    border: 1px solid #fd295c;
+    color: white;
+}
+
+.btn2{
+    width: 100px;
+    height: 36px;
+    border-radius: 20px;
+    border: 1px  solid rgb(91, 89, 89)
+}
+
+.btn2:hover{
+    background-color: none;
+    border: 1px solid #fd295c;
+    color: white;
+}
+
+.btn3{
+    width: 100px;
+    height: 36px;
+    border-radius: 20px;
+    border: 1px  solid rgb(102, 100, 100)
+}
+
+.btn3:hover{
+    background-color: none;
+    border: 1px solid #fd295c;
+    color: white;
+}
+
+.btn4{
+    width: 69px;
+    height: 36px;
+    border-radius: 20px;
+    border: 1px  solid rgb(106, 106, 106)
+}
+
+.btn4:hover{
+    background-color: none;
+    border: 1px solid #fd295c;
+    color: white;
+}
+
+.btn5{
+    width: 69px;
+    height: 36px;
+    border-radius: 20px;
+    border: 1px  solid rgb(94, 92, 92)
+}
+
+.btn5:hover{
+    background-color: none;
+    border: 1px solid #fd295c;
+    color: white;
+}
